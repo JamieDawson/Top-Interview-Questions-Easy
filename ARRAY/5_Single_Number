@@ -1,0 +1,26 @@
+var singleNumber = function (nums) {
+  let myValue = 0;
+
+  for (var i = 0; i < nums.length; i++) {
+    myValue ^= nums[i];
+  }
+  return myValue;
+};
+
+let nums = [2, 2, 1];
+singleNumber(nums);
+
+//Optimized solution:
+/*
+Create variable call myValue to hold number.
+
+Loop that loops through nums once
+    use XOR comparison on myValue to find the single digit.  (^=)
+
+Return myValue.
+*/
+
+/*
+Time Complexity: O(n) - looping through array once.
+Space Complexity: O(1) - Only creating a single variable to hold a 1 number. 
+*/
