@@ -9,7 +9,7 @@ var maxProfit = function (prices) {
       profit += prices[i + 1] - prices[i];
     }
   }
-  console.log(profit);
+  //  console.log(profit);
   return profit;
 };
 
